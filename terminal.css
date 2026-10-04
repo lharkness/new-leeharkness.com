@@ -1,0 +1,22 @@
+:root { color-scheme: dark; font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace; background: #101312; color: #d5ddd7; font-size: 16px; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100dvh; }
+main { padding: clamp(20px, 4vw, 48px); line-height: 1.65; }
+#output:empty { display: none; }
+.entry { margin: 0 0 1.1rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.command-line { color: #9aa69e; }
+.page { white-space: normal; }
+.page p, .page ul, .page ol { margin: 0 0 1em; }
+.page > :last-child { margin-bottom: 0; }
+.page h1, .page h2, .page h3 { font-size: 1em; color: #98e6ad; margin: 0 0 1em; }
+.page pre { white-space: pre-wrap; }
+.prompt { color: #98e6ad; white-space: nowrap; }
+form { display: flex; gap: .7ch; align-items: baseline; }
+input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: inherit; caret-color: #98e6ad; font: inherit; line-height: inherit; padding: 0; border-radius: 0; }
+form:focus-within .prompt { color: #afffc4; }
+a { color: #98e6ad; text-decoration: underline; text-underline-offset: .2em; }
+a:hover { color: #caffd7; }
+a:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+.error { color: #f0b5a7; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 480px) { main { padding: 20px 16px; } }
