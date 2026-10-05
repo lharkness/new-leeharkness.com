@@ -154,7 +154,7 @@ function run(raw) {
   // User input is always text, never HTML or executable code.
   const line = document.createElement('div');
   line.className = 'entry command-line';
-  line.textContent = 'visitor@site:~$ ' + command;
+  line.textContent = 'visitor@leeharkness.com:~$ ' + command;
   output.append(line);
   const [name, ...args] = command.split(/\s+/);
   switch (name) {
